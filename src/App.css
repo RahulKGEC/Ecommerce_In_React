@@ -1,0 +1,14 @@
+.na::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for Firefox */
+  .na {
+    scrollbar-width: none;
+  }
+  
+  /* Hide scrollbar for Internet Explorer & Edge */
+  .na {
+    -ms-overflow-style: none;
+  }
+  
