@@ -4,12 +4,13 @@ import image1 from "../assets/hero.png"
 import image2 from "../assets/appleji.png"
 // import { FaChevronRight } from "react-icons/fa";
 import { LuArrowRight } from "react-icons/lu";
+// import { Padding } from '@mui/icons-material';
 function Cart23() {
   return (
     <>
       <Box sx={{ border: "2px solid black", height: "400px", width: "100%", backgroundColor: "black", color: "white" }}>
-        <Grid2 container spacing={2}>
-          <Grid2 item size={{ xs: 6, md: 6, lg: 6 }}>
+        <Grid2 container spacing={2}  sx={{p:4}}>
+          <Grid2 item size={{ xs: 6, md: 6, lg: 6 }} sx={{display:"flex",flexDirection:"column",gap:3}}>
             <Box sx={{ display: "flex", alignItems: "center" }}><img src={image2} alt="" /> <Typography variant="h6">Up to 10% off Voucher</Typography> </Box>
             <Typography variant="h3">Up to 10% off Voucher</Typography>
             <Box sx={{ display: "flex", alignItems: "center" }}><span className='border-b-2 text-xl '>Shop Now </span> <LuArrowRight className='text-2xl ml-2' /></Box>

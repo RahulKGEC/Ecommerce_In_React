@@ -14,9 +14,9 @@ import { useNavigate } from 'react-router-dom'
 
 
 function Cart() {
-    const [count, setCount] = useState(1)
+    // const [count, setCount] = useState(1)
     const navigator = useNavigate();
-    const [count2, setCount2] = useState(1)
+    // const [count2, setCount2] = useState(1)
     const [shipping, setShipping] = useState(false)
     const [ShippingCost, setShippingCost] = useState(0)
     const { cart, setCart } = useContext(CartContext)
