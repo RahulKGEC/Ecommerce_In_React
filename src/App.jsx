@@ -138,7 +138,7 @@ function App() {
               className="h-[18rem] w-[25rem] object-fit border-black p-12 bg-[#F5F5F5]"
             />
             <button className=' left-0 top-0 absolute rounded-md py-2 m-2 bg-[#DB4444] w-[6rem] font-bold'> - 40 %</button>
-            {!(wish?.some((ele) => ele.id === item.id)) ? <FaRegHeart className='font-bold text-3xl  ' onClick={(e) => { addToWish(item), e.stopPropagation() }} /> : <BsHeartFill className='text-red-700 font-bold text-3xl ' onClick={(e) => { removeToWish(item.id), e.stopPropagation(), console.log(data.id) }} />}
+            {!(wish?.some((ele) => ele.id === item.id)) ? <FaRegHeart className='font-bold text-3xl absolute  right-4 top-4 ' onClick={(e) => { addToWish(item), e.stopPropagation() }} /> : <BsHeartFill className='text-red-700 font-bold text-3xl  absolute  right-4 top-4' onClick={(e) => { removeToWish(item.id), e.stopPropagation(), console.log(data.id) }} />}
 
             {/* 
             <FaRegHeart className='absolute right-4 top-4 font-bold text-2xl'
